@@ -1,6 +1,7 @@
 import { prisma } from "@/db";
 import Link from "next/link";
 
+
 function getTodos() {
   return prisma.todo.findMany();
 }
